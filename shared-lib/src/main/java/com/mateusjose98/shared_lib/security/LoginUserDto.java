@@ -1,6 +1,9 @@
 package com.mateusjose98.shared_lib.security;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class LoginUserDto {
+    @JsonProperty("username")
     private String email;
     private String password;
 
